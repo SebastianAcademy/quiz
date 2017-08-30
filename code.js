@@ -3,7 +3,7 @@ var app = angular.module("quiz",[]);
 app.controller("quizController", function($scope){
     $scope.option = [
         "4-Lom",
-        "Adiral Motti",
+        "Admiral Motti",
         "Anakin Skywalker",
         "Bail Organa",
         "BG-81",

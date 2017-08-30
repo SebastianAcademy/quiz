@@ -9,9 +9,8 @@
     <h1 class="title">WHO AM I?</h1>
     <div ng-controller="quizController">
             <img src="{{question().image}}">
-            <button ng-click="loadNextQuestion()" class="submitButton">Submit</button>
             <div ng-repeat="choice in question().choices" class="choices">
-              {{choice}}
+              <button ng-click="loadNextQuestion()" class="submitButton">{{choice}}</button>
             </div>
     </div>
     <script src="node_modules/angular/angular.min.js"></script>

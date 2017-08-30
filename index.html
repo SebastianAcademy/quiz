@@ -9,16 +9,12 @@
     <h1 class="title">JAR JAR QUIZ</h1>
     <h3 class="title">Who am I?</h3>
     <div ng-controller="quizController">
-            <img src="{{question().image}}">
+            <img class="img" src="{{question().image}}">
             <div ng-repeat="choice in question().choices" class="choices">
-              <button ng-click="loadNextQuestion()" class="submitButton">{{choice}}</button>
-            </div>
+              <button ng-click="checkAnswer(choice)" class="submitButton">{{choice}}</button>
     </div>
-
     <audio controls autoplay class="hide">
-
       <source src="theme.mp3" type="audio/mp3">
-
     </audio>
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="code.js"></script>

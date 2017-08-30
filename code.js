@@ -3,6 +3,7 @@ var app = angular.module("quiz",[]);
 
 app.controller("quizController", function($scope){
     var idx = 0;
+    var points = 0;
     $scope.questions = [
         {   image : "images/r2-d2.jpeg",
             choices : [
@@ -95,10 +96,21 @@ app.controller("quizController", function($scope){
             correct : "Bib Fortuna"
         }
       ]
-        $scope.loadNextQuestion = function() {
+        loadNextQuestion = function() {
           idx ++;
         }
         $scope.question = function() {
             return $scope.questions[idx];
+        }
+        $scope.checkAnswer = function(answer) {
+          if (answer === $scope.questions[idx].correct) {
+              points ++;
+              console.log(points);
+          }
+          else {
+            points --;
+            console.log(points);
+          }
+          loadNextQuestion();
         }
     });

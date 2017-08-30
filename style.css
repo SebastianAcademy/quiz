@@ -16,6 +16,12 @@ body {
       border-radius: 60px;
 
 }
+
+.scorePoints {
+
+  font-size: 26px;
+
+}
 .title {
 
   font-family: "STARWARS";

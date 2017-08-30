@@ -13,6 +13,11 @@
             <div ng-repeat="choice in question().choices" class="choices">
               <button ng-click="checkAnswer(choice)" class="submitButton">{{choice}}</button>
     </div>
+    <div>
+      <p class="scorePoints">
+        Score: {{points}}
+      </p>
+    </div>
     <audio controls autoplay class="hide">
       <source src="theme.mp3" type="audio/mp3">
     </audio>

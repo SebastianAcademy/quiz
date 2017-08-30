@@ -26,7 +26,18 @@ body {
 }
 
 .submitButton {
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px 30px;
+  margin: 5px;
+  background-color: hsl(45, 100%, 67%);
+  color: #0B0B0B;
+  cursor: pointer;
+}
 
+.submitButton:hover {
+  background-color: hsl(45, 100%, 88%);
 }
 
 .choices {

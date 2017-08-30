@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <title>Star Wars Quiz</title>
   </head>
   <body ng-app="quiz">
+    <h1 class="title">Who am I?</h1>
     <div ng-controller="quizController">
-
+        <div ng-repeat="options in questions">
+            <img src="{{options.image}}">
+            <p>{{options.correct}}</p>
+        </div>
     </div>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="code.js"></script>
   </body>
 </html>

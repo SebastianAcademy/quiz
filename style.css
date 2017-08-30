@@ -3,7 +3,8 @@ src:url("STARWARS.ttf") format("truetype");
 font-weight:normal;font-style:normal;}
 
 body {
-  background-color: #0B0B0B; // smoky black
+  background-image: url("images/bg.jpg");
+  font-family: "STARWARS";
   overflow-x: hidden;
   color:#ffd457;
   margin: auto;
@@ -24,6 +25,10 @@ body {
 
 }
 
+.hide {
+  display: none;
+}
+
 .quizImage {
 
   width: 100%;
@@ -31,7 +36,19 @@ body {
 }
 
 .submitButton {
+  border: none;
+  font-family: "STARWARS";
+  letter-spacing: 4px;
+  border-radius: 15px;
+  padding: 5px 30px;
+  margin-top: 10px;
+  background-color: hsl(45, 100%, 67%);
+  color: #0B0B0B;
+  cursor: pointer;
+}
 
+.submitButton:hover {
+  background-color: hsl(45, 100%, 88%);
 }
 
 .choices {

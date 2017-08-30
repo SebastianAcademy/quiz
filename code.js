@@ -18,7 +18,7 @@ app.controller("quizController", function($scope){
             choices : [
                 "Admiral Motti",
                 "Admiral Ackbar",
-                "General Hux",
+                "A Trap",
                 "Galen Erso"
             ],
             correct : "Admiral Ackbar"

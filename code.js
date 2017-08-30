@@ -1,6 +1,8 @@
 var app = angular.module("quiz",[]);
 
+
 app.controller("quizController", function($scope){
+    var idx = 0;
     $scope.questions = [
       {       image : "images/r2-d2.jpeg",
               choices : [
@@ -21,6 +23,12 @@ app.controller("quizController", function($scope){
                 correct : "Admiral Ackbar"
           }
         ]
+    $scope.loadNextQuestion = function() {
+      idx ++;
+    }
+    $scope.question = function() {
+        return $scope.questions[idx];
+    }
 });
 
 

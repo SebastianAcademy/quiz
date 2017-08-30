@@ -1,15 +1,21 @@
+@font-face {font-family:"STARWARS";
+src:url("STARWARS.ttf") format("truetype");
+font-weight:normal;font-style:normal;}
+
 body {
   background-color: #0B0B0B; // smoky black
-  margin: 0;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
   color:#ffd457;
+  margin: auto;
+  text-align: center;
 }
 
 .title {
 
+  font-family: "STARWARS";
   text-align: center;
   color:#ffd457;
+  letter-spacing: 4px;
 
 }
 
@@ -17,4 +23,14 @@ body {
 
   width: 100%;
   align-items: center;
+}
+
+.submitButton {
+
+}
+
+.choices {
+
+  font-size: 20px;
+
 }

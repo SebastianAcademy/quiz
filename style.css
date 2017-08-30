@@ -20,6 +20,10 @@ body {
 
 }
 
+.hide {
+  display: none;
+}
+
 .quizImage {
 
   width: 100%;
